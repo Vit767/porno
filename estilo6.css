@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: bold, sans-serif;
-    background-color: #f507ed; /* Altere a cor de fundo da página */
-    color: #000000; /* Altere a cor das letras */
+    background-color: rgb(136, 7, 7); /* Altere a cor de fundo da página */
+    color: #f8f8f8; /* Altere a cor das letras */
 }
 
 .container {
