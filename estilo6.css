@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: bold, sans-serif;
+    background-color: #f507ed; /* Altere a cor de fundo da página */
+    color: #000000; /* Altere a cor das letras */
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.video-frame,
+.photo-gif-frame {
+    flex: 1;
+    border: 3px solid #090000;
+    padding: 20px;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gif {
+    margin-bottom: 10px;
+}
+
+.gif img {
+    margin-right: 10px;
+}
+
+.photo h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.photo-img {
+    max-width: 100%;
+    height: auto;
+}
