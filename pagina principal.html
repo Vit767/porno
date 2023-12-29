@@ -165,7 +165,49 @@ nav {
 
     <div></div>
    
+    <script>
+        window.addEventListener('unload', function () {
+            // Redireciona para a página inicial ao fechar a janela do navegador
+            window.location.href = 'index.html';
+        });
+    </script>
 
+<script>
+
+    // Lista de URLs das músicas
+    var musicas = [
+        'Ih Caralho  Leandro e as Abusadas(MP3_160K).mp3',
+        'Keyola das Popozudas - Agora Eu Sou Piranha(MP3_160K).mp3',
+        'Mc Copinho - Solta essa Porra_ vai Sentando.MP3 ( 18)(MP3_128K).mp3',
+        'Mc Katia Do O Meu Cú De Cabeça Pra Baixo(MP3_160K).mp3',
+        'Mc Nandinho   Novinha do Boquete Bom DJ ISAAC 22 E TININHO](MP3_160K).mp3',
+        'Morena abrindo o cu.mp3',
+        'Mr Catra - Vem Todo Mundo (Letra)(MP3_160K).mp3',
+        'Os Hawaianos - Abecedário da Putaria ♪(MP3_128K).mp3',
+        'Pode me Chamar de P(MP3_160K).mp3',
+
+
+        // Adicione mais URLs conforme necessário
+    ];
+
+    // Função para reproduzir uma música aleatória
+    function reproduzirMusicaAleatoria() {
+        // Escolhe uma música aleatória da lista
+        var musicaAleatoria = musicas[Math.floor(Math.random() * musicas.length)];
+
+        // Cria um elemento de áudio e o reproduz
+        var audio = new Audio(musicaAleatoria);
+        audio.play();
+        
+        // Adiciona um evento para tocar a próxima música quando a atual terminar
+        audio.addEventListener('ended', function() {
+            reproduzirMusicaAleatoria();
+        });
+    }
+
+    // Inicia a reprodução da música aleatória ao carregar a página
+    window.addEventListener('load', reproduzirMusicaAleatoria);
+</script>
 
 </body>
 </html>
